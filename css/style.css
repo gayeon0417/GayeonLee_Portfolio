@@ -812,13 +812,31 @@ figure {
 
 .work {
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   position: relative;
   height: 270px;
   width: 100%;
   display: table;
   overflow: hidden;
+}
+
+.work1 {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 270px;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+  opacity: 0.8;
+  background-size: 120%;
+}
+
+.work:hover,
+.work1:hover {
+  background-size: 140%;
 }
 
 @media screen and (max-width: 768px) {
