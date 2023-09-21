@@ -94,6 +94,7 @@ figure {
   position: relative;
   height: 600px;
   width: 100%;
+  overflow: hidden;
 }
 
 #fh5co-header .overlay,
@@ -104,6 +105,13 @@ figure {
   left: 0;
   right: 0;
   background: url(../images/bg3.jpg) no-repeat center center;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 #fh5co-header .display-t,
@@ -175,9 +183,16 @@ figure {
 }
 
 .eng_font3 {
-  font-family: 'Merriweather', serif;
-  line-height: 26px;
+  font-family: "Kaushan Script", cursive;
+  line-height: 25px;
 }
+
+.eng_font4 {
+  font-family: "Merriweather", serif;
+  line-height: 30px;
+  font-size: 18px;
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -348,8 +363,7 @@ figure {
 }
 
 .fh5co-bg-dark {
-  background: #2F3C4F;
-  background: #3c763d;
+  background: url(../images/site_bg2.jpg) no-repeat top center;
 }
 
 .fh5co-bg-dark .fh5co-heading h2 {
@@ -381,6 +395,11 @@ figure {
   display: inline-block;
   color: #000;
   font-weight: bold;
+  vertical-align: top;
+}
+
+.ko {
+  font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 .info li .second-block {
@@ -661,6 +680,7 @@ figure {
 .timeline-title {
   margin-top: 0;
   font-family: 'Merriweather', serif;
+  line-height: 40px;
 }
 
 .company {
@@ -728,7 +748,7 @@ figure {
 .progress-wrap {
   width: 100%;
   float: left;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .progress-wrap h3 {
@@ -753,19 +773,20 @@ figure {
 .progress {
   width: 100%;
   float: left;
-  height: 5px;
+  height: 15px;
   box-shadow: none;
 }
 
 .progress-bar {
   background-color: #3c763d;
-  height: 5px;
+  height: 15px;
   display: block;
   box-shadow: none;
 }
 
 .progress-bar.progress-bar-1 {
   background-color: #3c763d !important;
+  padding-top: 10px;
 }
 
 .progress-bar.progress-bar-2 {
@@ -1560,7 +1581,7 @@ input[type="text"] {
 
   .work_text {
     height: auto;
-    font-family: 'Merriweather', serif;
+    font-family: "Kaushan Script", cursive;
   }
 }
 
@@ -1572,20 +1593,21 @@ input[type="text"] {
 .work_text h3 {
   margin: 0;
   padding: 0.1em 0 0.2em;
-  font-family: 'Merriweather', serif;
+  font-family: "Kaushan Script", cursive;
   font-weight: 500;
 }
 
 .work_text p {
   margin-bottom: 0;
   font-family: 'Merriweather', serif;
+  font-size: 15px;
   font-weight: 550;
 }
 
 .pj1 {
   opacity: 0.7;
   color: #000;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .color1 {
@@ -1595,3 +1617,16 @@ input[type="text"] {
 .clear {
   clear: both;
 }
+
+.eng_font3 h2 {
+  font-family: "Kaushan Script", cursive;
+}
+
+/* .video {
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
