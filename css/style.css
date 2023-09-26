@@ -363,7 +363,7 @@ video {
 }
 
 .fh5co-bg-dark {
-  background: url(../images/site_bg2.jpg) no-repeat top center;
+  background: url(../images/site_bg2.jpg) no-repeat center center;
 }
 
 .fh5co-bg-dark .fh5co-heading h2 {
@@ -851,13 +851,16 @@ video {
   width: 100%;
   display: table;
   overflow: hidden;
-  opacity: 0.8;
-  background-size: 120%;
+  background-size: 140%;
 }
 
-.work:hover,
+
 .work1:hover {
-  background-size: 140%;
+  background-size: 150%;
+}
+
+.work:hover {
+  background-size: 120%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1630,3 +1633,9 @@ input[type="text"] {
   left: 0;
   width: 100%;
 } */
+
+@media (max-width:991px) {
+  #fh5co-work .col-md-5 {
+    width: 100%;
+  }
+}
